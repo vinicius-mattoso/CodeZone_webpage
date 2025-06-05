@@ -1,0 +1,16 @@
+[
+  {
+    "trilha": "python-basico",
+    "titulo": "Variáveis em Python",
+    "descricao": "Declaração, tipos e boas práticas.",
+    "imagem": "variaveis.png",
+    "link": "https://github.com/codezone/python/variaveis"
+  },
+  {
+    "trilha": "python-basico",
+    "titulo": "Funções em Python",
+    "descricao": "Como escrever funções reutilizáveis.",
+    "imagem": "funcoes.png",
+    "link": "https://github.com/codezone/python/funcoes"
+  }
+]

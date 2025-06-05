@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-5">
+  <h2 class="text-center mb-4">Escolha uma Trilha de Conhecimento</h2>
+  <div class="row">
+    {% for trilha in trilhas %}
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 text-center shadow-sm">
+        <img src="{{ url_for('static', filename='images/' ~ trilha.icone) }}" class="card-img-top" alt="{{ trilha.nome }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ trilha.nome }}</h5>
+          <p class="card-text">{{ trilha.descricao }}</p>
+          <a href="/trilha/{{ trilha.slug }}" class="btn btn-primary mt-3">Ver Conteúdos</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+[
+  {
+    "nome": "Python Básico",
+    "icone": "python-icon.png",
+    "slug": "python-basico",
+    "descricao": "Aprenda os fundamentos essenciais da programação em Python: variáveis, estruturas de controle, funções, manipulação de arquivos, instalação de pacotes e muito mais."
+  },
+  {
+    "nome": "Análise de Dados",
+    "icone": "analytics-icon.png",
+    "slug": "analise-de-dados",
+    "descricao": "Descubra como coletar, transformar, visualizar e interpretar dados utilizando bibliotecas como Pandas, Matplotlib e Seaborn."
+  },
+  {
+    "nome": "Inteligência Artificial",
+    "icone": "ai-icon.png",
+    "slug": "inteligencia-artificial",
+    "descricao": "Entenda os conceitos fundamentais da IA e desenvolva projetos com algoritmos de machine learning aplicados a diferentes áreas do conhecimento."
+  },
+  {
+    "nome": "Análise de Perfis Geológicos",
+    "icone": "geologia-icon.png",
+    "slug": "analise-perfis-geologicos",
+    "descricao": "Aprenda a interpretar perfis geológicos, trabalhar com dados de poço e aplicar técnicas computacionais para visualização e análise de subsuperfície com Python."
+  },
+  {
+    "nome": "Otimizações",
+    "icone": "otimizacao-icon.png",
+    "slug": "otimizacoes",
+    "descricao": "Desenvolva soluções computacionais eficientes utilizando algoritmos de otimização aplicados à engenharia, logística entre outros."
+  },
+  {
+    "nome": "ML Ops",
+    "icone": "mlops-icon.png",
+    "slug": "mlops",
+    "descricao": "Implemente pipelines robustos de machine learning em produção com foco em versionamento, automação, monitoramento e integração contínua de modelos."
+  }
+]
