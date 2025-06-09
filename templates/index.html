@@ -1,8 +1,83 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="container text-center py-5">
-  <h1 class="display-4">Bem-vindo à Code Zone</h1>
-  <p class="lead">Explore trilhas de aprendizado em Python, IA, Geologia e muito mais.</p>
-  <a href="/trilhas" class="btn btn-primary btn-lg mt-3">Começar</a>
-</div>
+
+<!-- Hero Section -->
+<section class="bg-light py-5 text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold mb-3">Bem-vindo à <span class="text-primary">Code Zone</span></h1>
+    <p class="lead text-muted">Explore trilhas de aprendizado em <strong>Python</strong>, <strong>Inteligência Artificial</strong>, <strong>Geociências</strong> e muito mais.</p>
+    <a href="/trilhas" class="btn btn-primary btn-lg mt-4 px-5 py-2">Começar agora</a>
+  </div>
+</section>
+
+<!-- Sobre a CodeZone -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Code Zone: onde a programação encontra propósito.</h2>
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/logo-codezone.png') }}" class="img-fluid rounded" alt="Imagem institucional">
+      </div>
+      <div class="col-md-6">
+        <p>A Code Zone nasceu de um desejo simples, porém poderoso: democratizar o acesso ao conhecimento em programação, análise de dados e tecnologia aplicada. Mais do que um projeto, a Code Zone é um espaço vivo de troca, aprendizado e evolução — construído por quem acredita que saber programar é tão importante quanto saber interpretar o mundo.
+
+Sabemos que o universo da tecnologia pode parecer inacessível para muitos. Barreiras como linguagem técnica, falta de apoio e distanciamento da realidade prática ainda afastam talentos e inibem potenciais.</p>
+      </div>
+    </div>
+
+    <div class="row align-items-center flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/foto_ilustrativa.png') }}" class="img-fluid rounded" alt="Imagem institucional">
+      </div>
+      <div class="col-md-6">
+        <p>Por isso, criamos a Code Zone: um ponto de encontro entre curiosidade, conhecimento e aplicação real. Aqui, acreditamos que aprender programação não é apenas sobre escrever códigos. É sobre resolver problemas, desenvolver pensamento crítico, aplicar lógica com criatividade e, acima de tudo, transformar ideias em impacto. A Code Zone é mais que um repositório de conteúdos — é um ecossistema. Um lugar onde quem ensina também aprende, onde errar faz parte do processo, e onde cada pergunta é bem-vinda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trilhas em Destaque -->
+<section class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Trilhas em Destaque</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Python Essencial</h5>
+            <p class="card-text">Aprenda do básico ao avançado com exercícios práticos e projetos reais.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="/trilha/python" class="btn btn-outline-primary w-100">Acessar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Inteligência Artificial</h5>
+            <p class="card-text">Descubra como treinar modelos e entender redes neurais com aplicações práticas.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="/trilha/inteligencia-artificial" class="btn btn-outline-primary w-100">Acessar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Geologia Computacional</h5>
+            <p class="card-text">Explore técnicas digitais aplicadas às ciências da Terra com dados reais e análises computacionais.</p>
+          </div>
+          <div class="card-footer bg-transparent border-0">
+            <a href="/trilha/geologia" class="btn btn-outline-primary w-100">Acessar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {% endblock %}

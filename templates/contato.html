@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="mb-3">Fale com a CodeZone</h1>
+    <p class="lead text-muted">Tem uma dúvida, sugestão ou quer colaborar? Entre em contato com a gente!</p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      
+      <!-- Formulário -->
+      <div class="col-md-6">
+        <form method="post" action="/contato">
+          <div class="mb-3">
+            <label for="nome" class="form-label">Seu nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Seu e-mail</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="assunto" class="form-label">Assunto</label>
+            <input type="text" class="form-control" id="assunto" name="assunto">
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Enviar</button>
+        </form>
+      </div>
+
+      <!-- Informações de contato -->
+      <div class="col-md-6">
+        <div class="mb-4">
+          <h5>📍 Localização</h5>
+          <p>Brasil (atendimento 100% remoto)</p>
+        </div>
+        <div class="mb-4">
+          <h5>📧 E-mail</h5>
+          <p>contato@codezone.com.br</p>
+        </div>
+        <div class="mb-4">
+          <h5>📱 Instagram</h5>
+          <a href="https://www.instagram.com/_codezone/" target="_blank" class="text-decoration-none">
+            @_codezone
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,2 +1,68 @@
 {% extends 'base.html' %}
-{% block content %}<div class='container py-5'><h1>Sobre a Code Zone</h1></div>{% endblock %}
+{% block content %}
+
+<section class="py-5 bg-light text-center">
+  <div class="container">
+    <h1 class="mb-4">Sobre a CodeZone</h1>
+    <p class="lead text-muted">Transformamos curiosidade em conhecimento. Tecnologia acessível, moderna e inspiradora.</p>
+  </div>
+</section>
+
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/foto_ilustrativa_02.png') }}" class="img-fluid rounded" alt="CodeZone">
+      </div>
+      <div class="col-md-6">
+  <h3>Quem Somos</h3>
+  <p>A Code Zone é uma iniciativa que nasceu do desejo de tornar a tecnologia algo próximo, aplicável e significativo. Mais do que ensinar código, queremos ajudar pessoas a entender o mundo por meio da lógica, da ciência e da criatividade.</p>
+  <p>Unimos programação, matemática, dados, inteligência artificial e suas aplicações em um espaço colaborativo, acessível e em constante evolução. Nosso objetivo é capacitar mentes curiosas — de qualquer área, idade ou nível de conhecimento — para transformar ideias em impacto real.</p>
+</div>
+    </div>
+
+    <div class="mb-5">
+      <h3 class="mb-3">Nossos Valores</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">📘 Educação acessível: democratizamos o conhecimento técnico com qualidade.</li>
+        <li class="list-group-item">🧠 Curiosidade: valorizamos perguntas inteligentes mais que respostas prontas.</li>
+        <li class="list-group-item">🚀 Evolução constante: acompanhamos a tecnologia de forma ética e consciente.</li>
+        <li class="list-group-item">🤝 Comunidade: construímos juntos, com respeito e diversidade de pensamento.</li>
+      </ul>
+    </div>
+
+    <div class="mb-5">
+  <h  3 class="mb-3">Nosso Manifesto</h3>
+  <p><em>Por uma programação mais humana, acessível e transformadora.</em></p>
+  <p>Acreditamos no poder da educação como ferramenta de mudança. Acreditamos que programar é mais do que digitar linhas de código — é escrever futuros. Criamos a Code Zone porque recusamos a ideia de que aprender programação deve ser privilégio de poucos.</p>
+  <p>Queremos abrir portas. Remover muros. Trocar o medo da tecnologia pela empolgação da descoberta. Somos apaixonados por matemática, ciência, dados e inteligência artificial — mas mais ainda, por compartilhar tudo isso de forma clara, ética e inspiradora.</p>
+  <p>Na Code Zone, o conhecimento é livre. O erro é parte do caminho. A dúvida é bem-vinda. E a jornada é coletiva. Se você chegou até aqui com vontade de aprender, ensinar ou simplesmente explorar... Você já faz parte da nossa Zona.</p>
+</div>
+
+    <div class="mb-5">
+      <h3 class="mb-3">Missão, Visão e Propósito</h3>
+<div class="row">
+  <div class="col-md-4">
+    <h5>🎯 Missão</h5>
+    <p>Capacitar pessoas com conhecimento tecnológico acessível, prático e interdisciplinar, conectando teoria à aplicação real.</p>
+  </div>
+  <div class="col-md-4">
+    <h5>🔭 Visão</h5>
+    <p>Ser referência nacional em educação digital transformadora, promovendo inclusão, inovação e aprendizado contínuo.</p>
+  </div>
+  <div class="col-md-4">
+    <h5>💡 Propósito</h5>
+    <p>Democratizar o acesso ao conhecimento técnico de qualidade, preparando indivíduos para resolver problemas do mundo real.</p>
+  </div>
+</div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="/contato" class="btn btn-primary btn-lg">Entre em contato conosco</a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

@@ -1,2 +1,36 @@
 {% extends 'base.html' %}
-{% block content %}<div class='container py-5'><h1>Blog em breve!</h1></div>{% endblock %}
+{% block content %}
+<section class="container py-5">
+  <h1 class="mb-5 text-center">Curiosidades & Artigos</h1>
+
+  <div class="row g-4">
+
+    <!-- Post: Python -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">Python: A Nova Linguagem Essencial no Mercado de Trabalho</h5>
+          <p class="card-text">
+            Python é uma das linguagens mais procuradas por empresas modernas. Descubra como ela está mudando o mercado e abrindo novas oportunidades.
+          </p>
+          <a href="/blog/python-mercado" class="btn btn-outline-primary">Leia mais</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Post: IA -->
+    <div class="col-md-6">
+      <div class="card h-100 shadow-sm border-0">
+        <div class="card-body">
+          <h5 class="card-title">Como a Inteligência Artificial Está Impulsionando os Resultados das Empresas</h5>
+          <p class="card-text">
+            Da automação ao atendimento, veja como a IA está transformando empresas e aumentando a eficiência em vários setores.
+          </p>
+          <a href="/blog/ia-resultados" class="btn btn-outline-primary">Leia mais</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Code Zone</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeZone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="/">Code Zone</a>
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="/trilhas">Trilhas</a></li>
-        <li class="nav-item"><a class="nav-link" href="/blog">Curiosidades</a></li>
-        <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
-      </ul>
+
+  <!-- Header com logo + nav -->
+  <header class="bg-light py-3 border-bottom">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="/" class="d-flex align-items-center text-decoration-none">
+        <img src="{{ url_for('static', filename='images/logo-codezone.png') }}" alt="CodeZone Logo" width="50" class="me-2">
+        <span class="fw-bold text-dark">CodeZone</span>
+      </a>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href="/">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="/trilhas">Trilhas</a></li>
+          <li class="nav-item"><a class="nav-link" href="/blog">Curiosidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="/sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
-</nav>
-<main>
-  {% block content %}{% endblock %}
-</main>
-<footer class="bg-light text-center py-3 mt-5">
-  <small>&copy; 2025 Code Zone</small>
-</footer>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white py-4 text-center">
+    <div class="container">
+      <p class="mb-1">© 2025 CodeZone. Todos os direitos reservados.</p>
+      <a href="https://www.instagram.com/_codezone/" target="_blank" class="text-white text-decoration-none d-inline-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram me-2" viewBox="0 0 16 16">
+          <path d="M8 0C5.8 0 5.5 0 4.7.1 3.9.2 3.3.3 2.8.6c-.5.3-1 .7-1.4 1.4-.3.5-.5 1.1-.6 1.9C.1 5.5 0 5.8 0 8c0 2.2 0 2.5.1 3.3.1.8.3 1.4.6 1.9.3.6.8 1.1 1.4 1.4.5.3 1.1.5 1.9.6.8.1 1.1.1 3.3.1s2.5 0 3.3-.1c.8-.1 1.4-.3 1.9-.6.6-.3 1.1-.8 1.4-1.4.3-.5.5-1.1.6-1.9.1-.8.1-1.1.1-3.3s0-2.5-.1-3.3c-.1-.8-.3-1.4-.6-1.9-.3-.6-.8-1.1-1.4-1.4-.5-.3-1.1-.5-1.9-.6C10.5.1 10.2 0 8 0zm0 1.5c2.1 0 2.4 0 3.2.1.7.1 1.1.2 1.4.4.4.2.7.5.9.9.2.3.3.7.4 1.4.1.8.1 1.1.1 3.2s0 2.4-.1 3.2c-.1.7-.2 1.1-.4 1.4-.2.4-.5.7-.9.9-.3.2-.7.3-1.4.4-.8.1-1.1.1-3.2.1s-2.4 0-3.2-.1c-.7-.1-1.1-.2-1.4-.4-.4-.2-.7-.5-.9-.9-.2-.3-.3-.7-.4-1.4C1.5 10.4 1.5 10.1 1.5 8s0-2.4.1-3.2c.1-.7.2-1.1.4-1.4.2-.4.5-.7.9-.9.3-.2.7-.3 1.4-.4C5.6 1.5 5.9 1.5 8 1.5z"/>
+          <path d="M8 3.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zm0 6.8a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4zM12.3 3.4a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+        </svg>
+        @_codezone
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
